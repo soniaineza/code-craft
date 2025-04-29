@@ -1,8 +1,5 @@
-import sys
-
 def main():
-    sys.stdout.write("$ ")
-    sys.stdout.flush()  # <<< flush forces the $ prompt to show immediately
+    print("$ ", end="", flush=True)
     input()
 
 if __name__ == "__main__":
